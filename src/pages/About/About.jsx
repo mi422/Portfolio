@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import Oumayma from '../../assets/img/profile/oumayma.jpeg';
+import Oumayma from '../../assets/img/profile/oumayma1.jpeg';
 import './About.css';
 import Button from 'react-bootstrap/Button';
 
@@ -11,7 +11,7 @@ const About = () => {
     return (
         <div id='about'>
         <div className='about'>
-            <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
+            <h3 className="pt-3 text-center font-details pb-3">ABOUT ME</h3>
             <Container>
                 <Row className="pt-3 pb-5 align-items-center">
                     {/* Profile pic */}
@@ -25,16 +25,14 @@ const About = () => {
                     <Col xs={12} md={6}>
                         <Row className=" align-items-start p-2 my-details rounded " >
                             {/* Description */ }
-                                        Hi there! I am <strong>&nbsp;Oumayma Missaoui</strong>
-                            <br />A passionate programmer, born and brought up in Tunisia. I am a Full Stack Web Developer with React.js,.Net, and MySQL as my tech stack.
-                            <br />
+                            I am <strong>&nbsp;Oumaima Missaoui</strong>am a passionate software Developer, born and brought up in Tunisia.
                             I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
                             <br /> <br />
                             {/* Buttons */}
                             <Col className="d-flex justify-content-center flex-wrap" >
                                 <div>
                                     <a href="#contact">
-                                        <Button className="m-2" variant="outline-warning">Let's Talk</Button>
+                                        <Button className="m-2" variant="outline-warning">Contact Me</Button>
                                     </a>
                                 </div>
                                 <div>

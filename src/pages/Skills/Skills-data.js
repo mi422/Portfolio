@@ -8,6 +8,9 @@ import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
+import C_SHARP from "../../assets/img/skills/c--4.svg";
+import FIREBASE from "../../assets/img/skills/firebase-1.svg";
+import L_MSSQL from "../../assets/img/skills/mssql.svg";
 
 export const skills={
     frontend :[
@@ -64,8 +67,14 @@ export const skills={
         {
           link: "https://pages.github.com/",
           imgAltText: "GitHub Pages",
-          imgSrc: L_GITHUB_PAGES,
+          imgSrc: L_GITHUB_PAGES ,
           skillName: "GitHub Pages",
+        },
+        {
+          link: "https://firebase.google.com/",
+          imgAltText: "Firebase",
+          imgSrc: FIREBASE,
+          skillName: "Firebase",
         },
       ],
       programmingLanguages: [
@@ -75,6 +84,12 @@ export const skills={
           imgSrc: L_JAVASCRIPT,
           skillName: "JavaScript",
         },
+        {
+          link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+          imgAltText: "C#",
+          imgSrc: C_SHARP,
+          skillName: "C#",
+        },
       ],
       versionControl: [
         {
@@ -82,6 +97,14 @@ export const skills={
           imgAltText: "GIT",
           imgSrc: L_GIT,
           skillName: "GIT",
+        },
+      ],
+      databases: [
+        {
+          link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
+          imgAltText: "MS-SQL",
+          imgSrc: L_MSSQL,
+          skillName: "MS-SQL",
         },
       ],
 };

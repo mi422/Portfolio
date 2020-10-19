@@ -15,9 +15,8 @@ const Skills = () => {
           <Row className="d-flex justify-content-around">
             {/* Frontend */}
             <Col md={6}>
-              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '50%' }} >
+              <Card className="focus mt-2 mb-2" style={{  position: 'relative' }} >
                 <Card.Body>
-                  {/* Frontend */}
                   <Card.Title className="text-center  card-title">Frontend</Card.Title>
                   <hr />
                   <Card.Text className="card-text d-flex justify-content-start flex-column">
@@ -30,12 +29,30 @@ const Skills = () => {
                     ))}
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </Card>          
+
+            {/* Database */}
+            <Card className="focus mt-2 mb-2" style= {{ position: 'relative' }}>
+              <Card.Body>
+                <Card.Title className="text-center card-title">Database</Card.Title>
+                <hr />
+                <Card.Text className="card-text d-flex justify-content-start flex-column">
+                  {skills.databases.map((skill, index) => (
+                    <span className="p-2" key={index}>
+                     <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                          <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image>
+                           {skill.skillName} 
+                           </a>
+                    </span>
+                  ))}
+                </Card.Text>
+              </Card.Body>
+            </Card>
             </Col>
 
               {/* Hosting Platforms */}
               <Col md={6}>
-              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '90%' }} >
+              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '55%' }} >
                 <Card.Body>
                   <Card.Title className="text-center  card-title">Hosting Platforms</Card.Title>
                   <hr />
@@ -52,7 +69,7 @@ const Skills = () => {
               </Card>
   
             {/* Programming Languages */}
-              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '90%' }} >
+              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '55%' }} >
                 <Card.Body>
                   <Card.Title className="text-center  card-title">Programming Languages</Card.Title>
                   <hr />
@@ -69,7 +86,7 @@ const Skills = () => {
               </Card>
               {/* Version Control */}
   
-              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '90%' }} >
+              <Card className="focus mt-2 mb-2" style={{  position: 'relative', left: '55%' }} >
                 <Card.Body>
                   <Card.Title className="text-center  card-title">Version Control</Card.Title>
                   <hr />
